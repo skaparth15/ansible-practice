@@ -1,0 +1,8 @@
+- name: Variables called from file
+  hosts: localhost
+  vars_files:
+    - var-storage.yaml
+  tasks:
+    - name: variables used from other vars_files
+      ansible.builtin.debug:
+       msg: "{{familyname}},is my lastname."
