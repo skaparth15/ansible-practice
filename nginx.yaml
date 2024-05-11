@@ -5,6 +5,11 @@
           ansible.builtin.dnf:
             name: nginx
             state:  present
+        - name: enabiling the nginx
+          ansible.builtin.service:
+            name: nginx
+            state: started
+            enabled: yes
   
     
       
