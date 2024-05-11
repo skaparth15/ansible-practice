@@ -1,6 +1,8 @@
 - name: variables declaration
   hosts: localhost
+  vars:
+    greetings: "hello"
   tasks:
     - name: variables used in tasks
       ansible.builtin.debug:
-        msg: "hi"
+        msg: "{greetings}, sricharan."
