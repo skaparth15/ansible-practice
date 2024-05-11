@@ -3,4 +3,4 @@
   tasks:
     - name: variable values passed as arguments
       ansible.builtin.debug:
-        msg: "{input} is received"
+        msg: "{{input}} is received"
