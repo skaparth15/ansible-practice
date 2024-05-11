@@ -2,7 +2,8 @@
   hosts: localhost
   vars:
     greetings: "hello"
+    last_name:  "kaparthi"
   tasks:
     - name: variables used in tasks
       ansible.builtin.debug:
-        msg: "{{greetings}}, sricharan."
+        msg: "{{greetings}}, sricharan,{{last_name}}."
