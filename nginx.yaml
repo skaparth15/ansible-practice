@@ -1,7 +1,10 @@
 - name: installing the nginx
   hosts: localhost
   tasks:
-    - name: started installing nginx
+    - name: stsrted installing nginx
       ansible.builtin.dnf:
       name: nginx
       state:  present
+      
+    
+      
