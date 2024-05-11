@@ -1,8 +1,9 @@
 - name: variables in ansible
   hosts: localhost
   vars:
-    variable1: "sricharan"
-    variable2: "kaparthi"
+    firstname: "sricharan"
+    lastname: "kaparthi"
+
   tasks:
     ansible.builtin.debug:
-      msg: "my first name  {{variable1}},last name {{variable2}}"
+      msg: "my first name {{firstname}},last name {{lastname}}."
