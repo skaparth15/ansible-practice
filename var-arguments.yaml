@@ -1,0 +1,6 @@
+- name: variables as arguments
+  hosts: localhost
+  tasks:
+    - name: variable values passed as arguments
+      ansible.builtin.debug:
+        msg: "{input} is received"
