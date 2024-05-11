@@ -2,4 +2,4 @@
   host: localhost
   tasks:
   - name: pinging the server
-    ansible.bulltin.ping
+    ansible.bulltin.ping:
