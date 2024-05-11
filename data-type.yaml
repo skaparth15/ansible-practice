@@ -11,7 +11,6 @@
       lunch: 500
 
   tasks:
-    ansible.builtin.debug:
-      msg: "place that must be covered in {{place}},and must visit {{location}},after that {{costs}}"
-
-
+    - name: TASK1
+      ansible.builtin.debug:
+        msg: "after visiting {{place}}, must visit places {{location}} and after that {{costs}}"
