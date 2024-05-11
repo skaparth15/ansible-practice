@@ -1,9 +1,9 @@
-- name: variables in ansible
-  hosts: localhost
-  vars:
-    firstname: "sricharan"
-    lastname: "kaparthi"
-
+- name: variables declaration
+  hosts:  localhost
+  var:
+    first_name: "sricharan"
+    last_name:  "kaparthi"
   tasks:
-    ansible.builtin.debug:
-      msg: "my first name {{firstname}},last name {{lastname}}."
+    - name: variables used in tasks
+      ansible.builtin.debug:
+        msg:  "{{ first_name }}, Let’s learn Ansible variables"
