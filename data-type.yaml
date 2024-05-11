@@ -3,9 +3,9 @@
   vars:
     place: hyderabad
     location:
-    - tankbund
-    - zoopark
-    - birla mandir
+      - tankbund
+      - zoopark
+      - birla mandir
     costs:
       movie: 300
       lunch: 500
