@@ -3,4 +3,4 @@
   tasks:
     - name: variables used in tasks
       ansible.builtin.debug:
-        mssg: "hi"
+        msg: "hi"
