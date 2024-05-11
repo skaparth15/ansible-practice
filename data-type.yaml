@@ -1,0 +1,17 @@
+- name: data types
+  hosts: localhost
+  vars:
+    place: hyderabad
+    location:
+    - tankbund
+    - zoopark
+    - birla mandir
+    costs:
+      movie: 300
+      lunch: 500
+
+  tasks:
+    ansible.builtin.debug:
+      msg: "place that must be covered in {{place}},and must visit {{location}},after that {{costs}}"
+
+
