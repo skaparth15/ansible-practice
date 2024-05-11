@@ -1,0 +1,10 @@
+- name: Nature Of Variables
+  hosts:  localhost
+  vars:
+    surname:  "kaparthi"
+  tasks:
+    name: entered into tasks
+    ansible.builtin.debug:
+      msg:  "{{surname}},how are you doing"
+      
+
